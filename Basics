@@ -1,0 +1,15 @@
+use NMS;
+
+select * from Orders;
+
+select top 10 * from orders 
+
+-- write a sql to get all the orders where customers name has "a" as second character and "d" as fourth character (58 rows)
+
+select * from Orders where customer_name like '_a__d%'
+
+-- write a sql to get all the orders placed in the month of dec 2020 (352 rows) 
+
+select * from Orders
+where order_date between '2020-12-01' and '2020-12-31'
+
